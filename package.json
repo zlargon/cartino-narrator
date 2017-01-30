@@ -1,0 +1,14 @@
+{
+  "name": "cartino-narrator",
+  "version": "0.0.0",
+  "description": "Cartino Carzy News Narrator",
+  "main": "index.js",
+  "repository": "git@github.com:zlargon/cartino-narrator.git",
+  "author": "zlargon <zlargon@icloud.com>",
+  "license": "MIT",
+  "dependencies": {
+    "co": "4.6.0",
+    "commander": "2.9.0",
+    "google-tts-api": "0.0.1"
+  }
+}
