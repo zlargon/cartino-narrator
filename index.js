@@ -11,7 +11,7 @@ const program = require('commander');
 
 const pkg      = require('./package.json');
 const download = require('./download');
-const player   = 'afplay';
+const player   = require('./player');
 
 // show package.json
 function info () {
