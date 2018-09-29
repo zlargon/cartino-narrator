@@ -11,10 +11,10 @@
   "dependencies": {
     "co": "4.6.0",
     "commander": "2.9.0",
-    "google-tts-api": "0.0.1"
+    "google-tts-api": "^0.0.3"
   },
   "config": {
-    "path": "",
+    "path": "/Users/zlargon/Github/cartino-narrator",
     "rate": 1.4
   }
 }
