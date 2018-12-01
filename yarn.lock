@@ -18,9 +18,9 @@ encoding@^0.1.11:
   dependencies:
     iconv-lite "~0.4.13"
 
-google-tts-api@^0.0.3:
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/google-tts-api/-/google-tts-api-0.0.3.tgz#2fbc4db33fd58f2acbd6af1443026e15922dcca5"
+google-tts-api@^0.0.4:
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/google-tts-api/-/google-tts-api-0.0.4.tgz#76c6b73de3703cdca5a2cd211bc77e3f95585fe0"
   dependencies:
     isomorphic-fetch "^2.2.1"
 

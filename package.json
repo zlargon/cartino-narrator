@@ -11,7 +11,7 @@
   "dependencies": {
     "co": "4.6.0",
     "commander": "2.9.0",
-    "google-tts-api": "^0.0.3"
+    "google-tts-api": "^0.0.4"
   },
   "config": {
     "path": "/Users/zlargon/Github/cartino-narrator",
