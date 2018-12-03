@@ -15,6 +15,7 @@
   },
   "config": {
     "path": "/Users/zlargon/Github/cartino-narrator",
-    "rate": 1.4
+    "rate": 1.4,
+    "lang": "zh-tw"
   }
 }

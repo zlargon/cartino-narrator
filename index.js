@@ -31,8 +31,9 @@ function save () {
 program
   .usage('<sentence>')
   .version(pkg.version)
-  .option('-p, --path [path]', "download to target path")
+  .option('-p, --path <path>', "download to target path")
   .option('-r, --rate <rate>', "speed rate (0.5 ~ 2.0), default: 1.4")
+  .option('-l, --lang <lang>', "setup language code https://cloud.google.com/speech-to-text/docs/languages")
   .parse(process.argv);
 
 // init target path
@@ -72,6 +73,15 @@ if (program.rate === true) {
   info();
 }
 
+// 3. set lang
+if (program.lang === true) {
+  info();
+} else if (typeof program.lang === 'string') {
+  pkg.config.lang = program.lang;
+  save();
+  info();
+}
+
 // check args
 if (program.args.length === 0) {
   process.exit();
@@ -83,7 +93,7 @@ co(function * () {
   // 1. get URL
   const sentence = program.args[0];
   console.log(sentence);
-  const url = yield tts(sentence, 'zh-tw');
+  const url = yield tts(sentence, pkg.config.lang);
 
   // 2. download to tmp file
   const tmp = path.resolve(__dirname, './translate_tts.mp3');
